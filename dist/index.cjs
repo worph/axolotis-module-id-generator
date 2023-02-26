@@ -4424,7 +4424,8 @@ var src_exports = {};
 __export(src_exports, {
   AxBasicModule: () => AxBasicModule,
   IdService: () => IdService,
-  IdServiceID: () => IdServiceID
+  IdServiceID: () => IdServiceID,
+  makeid: () => makeid
 });
 module.exports = __toCommonJS(src_exports);
 var import_inversify = __toESM(require_inversify(), 1);
@@ -4466,6 +4467,7 @@ var AxBasicModule = class {
 0 && (module.exports = {
   AxBasicModule,
   IdService,
-  IdServiceID
+  IdServiceID,
+  makeid
 });
 //# sourceMappingURL=index.cjs.map

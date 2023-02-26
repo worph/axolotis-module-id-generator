@@ -2,7 +2,7 @@ import {AxModule} from "axolotis-module-definition";
 import {ContainerModule, interfaces} from "inversify";
 import {IdServiceID} from "./Identifier";
 import {IdService} from "./services/IdService";
-export {IdService} from "./services/IdService";
+export * from "./services/IdService";
 
 export * from "./Identifier";
 

@@ -4453,6 +4453,7 @@ var AxBasicModule = class {
 export {
   AxBasicModule,
   IdService,
-  IdServiceID
+  IdServiceID,
+  makeid
 };
 //# sourceMappingURL=index.mjs.map
