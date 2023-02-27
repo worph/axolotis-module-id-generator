@@ -4422,7 +4422,7 @@ var require_inversify = __commonJS({
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  AxBasicModule: () => AxBasicModule,
+  AxIDModule: () => AxIDModule,
   IdService: () => IdService,
   IdServiceID: () => IdServiceID,
   makeid: () => makeid
@@ -4450,7 +4450,7 @@ var IdService = class {
 };
 
 // src/index.ts
-var AxBasicModule = class {
+var AxIDModule = class {
   getModule() {
     console.log("AxBasicModule installed 2");
     return new import_inversify.ContainerModule((bind) => {
@@ -4465,7 +4465,7 @@ var AxBasicModule = class {
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  AxBasicModule,
+  AxIDModule,
   IdService,
   IdServiceID,
   makeid

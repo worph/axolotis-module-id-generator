@@ -6,7 +6,7 @@ export * from "./services/IdService";
 
 export * from "./Identifier";
 
-export class AxBasicModule implements AxModule{
+export class AxIDModule implements AxModule{
     getModule(): ContainerModule {
         console.log("AxBasicModule installed 2");
         return new ContainerModule((bind: interfaces.Bind) => {

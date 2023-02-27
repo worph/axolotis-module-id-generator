@@ -4437,7 +4437,7 @@ var IdService = class {
 };
 
 // src/index.ts
-var AxBasicModule = class {
+var AxIDModule = class {
   getModule() {
     console.log("AxBasicModule installed 2");
     return new import_inversify.ContainerModule((bind) => {
@@ -4451,7 +4451,7 @@ var AxBasicModule = class {
   }
 };
 export {
-  AxBasicModule,
+  AxIDModule,
   IdService,
   IdServiceID,
   makeid
