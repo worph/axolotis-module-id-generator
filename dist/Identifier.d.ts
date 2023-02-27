@@ -1,2 +1,2 @@
-export declare const IdServiceID: unique symbol;
+export declare const IdServiceName: unique symbol;
 //# sourceMappingURL=Identifier.d.ts.map

@@ -1,1 +1,1 @@
-export const IdServiceID = Symbol.for("IdServiceID");
+export const IdServiceName = Symbol.for("IdServiceName");

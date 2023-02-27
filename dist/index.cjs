@@ -4424,14 +4424,14 @@ var src_exports = {};
 __export(src_exports, {
   AxIDModule: () => AxIDModule,
   IdService: () => IdService,
-  IdServiceID: () => IdServiceID,
+  IdServiceName: () => IdServiceName,
   makeid: () => makeid
 });
 module.exports = __toCommonJS(src_exports);
 var import_inversify = __toESM(require_inversify(), 1);
 
 // src/Identifier.ts
-var IdServiceID = Symbol.for("IdServiceID");
+var IdServiceName = Symbol.for("IdServiceName");
 
 // src/services/IdService.ts
 function makeid(length) {
@@ -4452,12 +4452,8 @@ var IdService = class {
 // src/index.ts
 var AxIDModule = class {
   getModule() {
-    console.log("AxBasicModule installed 2");
     return new import_inversify.ContainerModule((bind) => {
-      bind(IdService.name).toDynamicValue(() => {
-        return new IdService();
-      }).inSingletonScope();
-      bind(IdServiceID).toDynamicValue(() => {
+      bind(IdServiceName).toDynamicValue(() => {
         return new IdService();
       }).inSingletonScope();
     });
@@ -4467,7 +4463,7 @@ var AxIDModule = class {
 0 && (module.exports = {
   AxIDModule,
   IdService,
-  IdServiceID,
+  IdServiceName,
   makeid
 });
 //# sourceMappingURL=index.cjs.map
