@@ -1,0 +1,2 @@
+import{ContainerModule as c}from"inversify";var a=Symbol.for("IdServiceName");function l(t){let e="",o="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",m=o.length;for(let n=0;n<t;n++)e+=o.charAt(Math.floor(Math.random()*m));return e}var r=class{makeid(e){return l(e)}};var i=class{getModule(){return new c(e=>{e(a).toDynamicValue(()=>new r).inSingletonScope()})}};export{i as AxIDModule,r as IdService,a as IdServiceName,l as makeid};
+//# sourceMappingURL=index.js.map
